@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>Home</ul>
+        <ul>Organizacion</ul>
+        <ul>Equipo de Trabajo</ul>
+    </nav>
+     <header>
+        <h1>Portal de la Escuela Profesional de Ingenieria de Sistemas</h1>
+     </header>
+     <main>
+         <div>
+            <h2>REGISTRO DE ALUMNOS</h2>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" placeholder="Ej. Alex" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" required>
+                <br>
+                <label for="ap-paterno">Apellido Paterno</label>
+                <input type="text" name="ap-paterno" placeholder="Ej. Perez" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" required>
+                <br>
+                <label for="ap-materno">Apellido Materno</label>
+                <input type="text" name="ap-materno" placeholder="Ej. Valera" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+" required>
+                <br>
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" placeholder="Ej. 20" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Ej.plesure@unamad.edu.pe" required>
+                <br>
+                <label>
+                      <input type="radio" name="Género" value="M">
+                      Masculino
+                </label>
+                <label>
+                       <input type="radio" name="Género" value="F">
+                       femenino
+                </label>
+                <br>
+                <input type="submit" value="Registrar">
+            </form>
+         </div>
+         <div>
+            <h2>Lista de Productos</h2>
+            <table border="1" cellspacing="0" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th>N°</th>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td align="rigth" colspan="3">Total</td>
+                        <td>S/. 5,350.00</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td align="center">1</td>
+                        <td>Televisor de 42 pulgadas</td>
+                        <td>Televisor smart de marca LG</td>
+                        <td>S/. 1,500.00</td>
+                    </tr>
+                    <tr>
+                        <td align="center">2</td>
+                        <td>Lavadora de 10 kg</td>
+                        <td>Lavadora smart de marca SAMSUNG</td>
+                        <td>S/. 2,500.00</td>
+                    </tr>
+                    <tr>
+                        <td align="center">3</td>
+                        <td>Cafetera</td>
+                        <td>Cafetera de marca Oster</td>
+                        <td>S/. 500.00</td>
+                    </tr>
+                    <tr>
+                        <td align="center">4</td>
+                        <td>Micro ondas</td>
+                        <td>Micro ondas de marca Oster</td>
+                        <td>S/. 850.00</td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>
+         <div>
+            <h2>Horario UNAMAD</h2>
+            <table border="1" cellspacing="0" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th>Hora/Día</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center">02:00 - 03:00</td>
+                        <td align="center" rowspan="3">Desarrollo de Aplicaciones Web I</td>
+                        <td align="center">LIBRE</td>
+                        <td align="center" rowspan="3">Ingeniería de Software</td>
+                        <td align="center">LIBRE</td>
+                        <td align="center" rowspan="3">LIBRE</td>
+                    </tr>
+                    <tr>
+                        <td align="center">03:00 - 4:00</td>
+                        <td align="center">Desarrollo de Aplicaciones Web I</td>
+                        <td align="center" rowspan="2">Ingeniería de Software</td>
+                        <td align="center">Ingeniería de Software</td>
+                        <td align="center" rowspan="2">Desarrollo de Aplicaciones Web I</td>
+                        <td align="center">LIBRE</td>
+                    </tr>
+                    <tr>
+                        <td align="center">4:00 - 5:00</td>
+                        <td align="center">Desarrollo de Aplicaciones Web I</td>
+                        <td align="center">Ingeniería de Software</td>
+                        <td align="center">Ingeniería de Software</td>
+                        <td align="center">Desarrollo de Aplicaciones Web I</td>
+                        <td align="center">LIBRE</td>
+                    </tr>
+                    <tr>
+                        <td align="center">5:00 - 6:00</td>
+                        <td align="center" rowspan="2">Arquitectura del Computador</td>
+                        <td align="center" rowspan="2">LIBRE</td>
+                        <td align="center" rowspan="2">LIBRE</td>
+                        <td align="center" rowspan="2">Gestión Financiera y de Procesos de Negacio</td>
+                        <td align="center" rowspan="2">Fundamentos de Redes</td>
+                    </tr>
+                    <tr>
+                        <td align="center">6:00 - 7:00</td>
+                        <td align="center">Arquitectura del Computador</td>
+                        <td align="center">LIBRE</td>
+                        <td align="center">LIBRE</td>
+                        <td align="center">Gestión Financiera y de Procesos de Negocio</td>
+                        <td align="center">Fundamentos de Redes</td>
+                    </tr>
+                    <tr>
+                        <td align="center">7:00 - 8:00</td>
+                        <td align="center" rowspan="2">Fundamento de Redes</td>
+                        <td align="center" rowspan="2">Gestión Financiera y de Procesos de Negocio</td>
+                        <td align="center" rowspan="2">Big Data</td>
+                        <td align="center" rowspan="2">Big Data</td>
+                        <td align="center" rowspan="2">Arquitectura del Computador</td>
+                    </tr>
+                    <tr>
+                        <td align="center">8:00 - 9:00</td>
+                        <td align="center">Fundamento de Redes</td>
+                        <td align="center">Gestión Financiera y de Procesos de Negocio</td>
+                        <td align="center">Big Data</td>
+                        <td align="center">Big Data</td>
+                        <td align="center">Arquitectura del Computador</td>
+                    </tr>
+
+            </table>
+         </div>
+     </main>
+</body>
+</html>
