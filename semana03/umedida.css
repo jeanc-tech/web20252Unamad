@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.general{
+    width: 500px;
+    height: 200px;
+    font-size: 1em;
+    background-color: aquamarine;
+}
+.caja_px{
+    width: 500px;
+    height: 100px;
+    background-color: green;
+}
+.caja_vw{
+    width: 30vw;
+    height: 30vh;
+    background-color: yellow;
+}
+.caja_em{
+    width: 20em;
+    height: 20em;
+    background-color: red;
+}
+/* .rem{
+    width: 10em;
+    height: 10em;
+    background-color: green;
+}
+.por{
+    width: 50%;
+    background-color: black;
+} */
