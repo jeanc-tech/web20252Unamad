@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./01-frameeork.css">
+    <title>Uso de Framework</title>
+</head>
+<body>
+    <main class="container">
+        <h2>Columnas</h2>
+        <!-- grilla -->
+        <div class="row">
+            <!-- Columnas -->
+            <div class="col oscuro">
+                1ra columna
+            </div>
+            <div class="col claro">
+                2da columna
+            </div>
+            <div class="col oscuro">
+                3ra columna
+            </div>
+            <div class="col claro">
+                4ta columna
+            </div>
+        </div>
+        <hr>
+        <h2>Columnas Definidas</h2>
+        <div class="row">
+            <div class="col-5 claro">
+                Columna de 5
+            </div>
+            <div class="col-7 oscuro">
+                Columna de 7
+            </div>
+        </div>
+        <hr>
+        <h2>Columnas Responsive</h2>
+        <!-- breakpoint -->
+         <h3><code>col-xl-#</code></h3>
+         <h5>xl -> las columnas colapsan si el ancho disponible es menor a 1200</h5>
+         <div class="row">
+            <div class="col-xl-8 oscuro">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error tempora nostrum necessitatibus, sunt repudiandae adipisci rerum reiciendis, quisquam saepe aut, minima excepturi. Deserunt dicta tenetur debitis enim placeat doloribus repellendus.
+            </div>
+            <div class="col-xl-4 claro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia excepturi sint magni facere corrupti totam et quibusdam beatae aspernatur recusandae? Repellendus ipsam corrupti recusandae dignissimos, ratione dicta perferendis. Veritatis, possimus.
+            </div>
+         </div>
+         <h3><code>col-lg-#</code></h3>
+         <h5> lg -> las columnas colapsan si el ancho disponible es menor a 992px</h5>
+         <div class="row">
+            <div class="col-lg-4 oscuro">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique iste impedit mollitia doloremque doloribus vero recusandae ab blanditiis nemo consequatur! Nostrum modi quis facilis doloremque error corrupti? Molestias, exercitationem cumque.
+            </div>
+            <div class="col-lg-4 claro">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolorum commodi adipisci totam voluptatibus cupiditate, placeat quas eveniet recusandae beatae vero, iste possimus necessitatibus quo fugit inventore, expedita porro tempora.
+            </div>
+            <div class="col-lg-4 claro">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, totam! Natus ea aut, corporis aspernatur amet sequi aperiam accusantium ducimus vitae hic dignissimos officiis corrupti veniam, ipsum facere adipisci sint.
+            </div>
+         </div>
+
+         <hr>
+         <h3><code>col-md-#</code></h3>
+         <h5>md-> Las columnas colapsan si el ancho disponible es menor a 768px</h5>
+         <div class="row">
+            <div class="col-md-6 oscuro">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat facere quae sed pariatur ducimus deleniti ex corrupti, porro architecto earum! Architecto iste neque ab. Possimus, maxime nulla. Corrupti, nesciunt eveniet.
+            </div>
+            <div class="col-md-6 claro">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id saepe provident ex distinctio dolores nostrum illum ducimus praesentium atque molestiae earum quis, qui tempore adipisci aliquam nesciunt molestias, corporis facere.
+            </div>
+         </div>
+
+         <hr>
+         <h3><code>col-sm-#</code></h3>
+         <h5>sm-> Las columnas colapsan si el ancho disponible es menor a 576px</h5>
+         <div class="row">
+            <div class="col-sm-3 oscuro">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas saepe fuga aut exercitationem facere, tempore quam commodi, similique autem delectus repellat ipsam veritatis vero. Molestiae odit illo vitae perspiciatis natus!
+            </div>
+            <div class="col-sm-9 claro">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto maiores praesentium ut? Voluptates sint incidunt nostrum ex reiciendis sunt illum accusantium. Enim, consequatur debitis? Est eius laborum facilis dolorum magnam!
+            </div>
+         </div>
+
+         <hr>
+         <h3><code>Columnas Responsives Combinadas</code></h3>
+         <h5>Combinando las calses previamente vistas podemos indicar que "col" ocupe distintas cantidad de columnas en diferentes medidas (breakpoint)</h5>
+         <div class="row">
+            <div class="col-xl-7 col-lg-12 oscuro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis asperiores aut sapiente commodi earum omnis quam optio rerum a officia, ad atque numquam tempora enim laudantium impedit ducimus quos sunt.
+            </div>
+            <div class="col-xl-3 col-lg-8 col-md-6 col-sm-12 claro">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ut exercitationem beatae nobis nemo expedita facilis nam, cumque modi architecto deleniti! Autem debitis ipsam excepturi deserunt! Non saepe veniam tempora.
+            </div>
+            <div class="col-xl-2 col-lg-4 col-md-6 col-sm-12 oscuro">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam exercitationem eos vitae recusandae deserunt omnis neque voluptas? Sint et sequi laboriosam quidem, quis consequatur enim beatae pariatur similique ducimus unde.
+            </div>
+         </div>
+    </main>
+</body>
+</html>

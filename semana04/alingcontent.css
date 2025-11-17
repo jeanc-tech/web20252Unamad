@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* normal
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    align-content: normal;
+    height: 100vh;
+}
+
+.box div {
+    width: 300px;
+}
+
+.box div:nth-child(even) {
+    background: yellow;
+}
+
+.box div:nth-child(odd) {
+    background: aqua;
+} */
+
+.box {
+    display: flex;
+    /* flex-wrap: wrap;
+    width: 300px; */
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.box div {
+    width: 120px;
+    height: 200px;
+    align-content: flex-start;
+    text-align: center;
+}
+
+.box div:nth-child(even) {
+    background: yellow;
+}
+
+/* center
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    align-content: center;
+    height: 100vh;
+}
+
+.center div {
+    width: 300px;
+}
+
+.center div:nth-child(even) {
+    background: yellow;
+}
+
+.center div:nth-child(odd) {
+    background: aqua;
+}  */
+
+/* flex-start
+.flex-start {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    align-content: flex-start;
+    height: 100vh;
+}
+
+.flex-start div {
+    width: 300px;
+}
+
+.flex-start div:nth-child(even) {
+    background: yellow;
+}
+
+.flex-start div:nth-child(odd) {
+    background: aqua;
+} */
+
+/* flex-end
+.flex-start {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    align-content: flex-end;
+    height: 100vh;
+}
+
+.flex-end div {
+    width: 300px;
+}
+
+.flex-end div:nth-child(even) {
+    background: yellow;
+}
+
+.flex-end div:nth-child(odd) {
+    background: aqua;
+} */
+
+/* space-around
+.flex-start {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    align-content: space-around;
+    height: 100vh;
+}
+
+.space-around div {
+    width: 300px;
+}
+
+.space-around div:nth-child(even) {
+    background: yellow;
+}
+
+.space-around div:nth-child(odd) {
+    background: aqua;
+} */
+
+/* space-between
+.flex-start {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    align-content: space-between;
+    height: 100vh;
+}
+
+.space-between div {
+    width: 300px;
+}
+
+.space-between div:nth-child(even) {
+    background: yellow;
+}
+
+.space-between div:nth-child(odd) {
+    background: aqua;
+} */
+
+/* space-evenly
+.flex-start {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    align-content: space-evenly;
+    height: 100vh;
+}
+
+.space-evenly div {
+    width: 300px;
+}
+
+.space-evenly div:nth-child(even) {
+    background: yellow;
+}
+
+.space-evenly div:nth-child(odd) {
+    background: aqua;
+} */

@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background: goldenrod;
+    margin: 10px;
+    color: black;
+    text-align: center;
+    line-height: 100px;
+    transition: all 1s ease;
+
+
+&.translate {
+    &:hover{
+        transform: translate(100px, 100px)
+    }
+}
+
+&.translatex {
+    &:hover{
+        transform: translatex(300px)
+    }
+}
+
+&.translatey {
+    &:hover{
+        transform: translatey(200px)
+    }
+}
+
+&.scale {
+    &:hover{
+        transform: scale(2, 2)
+    }
+}
+
+&.scalex {
+    &:hover{
+        transform: scalex(2)
+    }
+}
+
+&.scaley {
+    &:hover{
+        transform: scaley(3)
+    }
+}
+
+&.rotate {
+    &:hover{
+        transform: rotate(2turn);
+    }
+}
+
+&.rotatex {
+    &:hover{
+        transform: rotatex(1turn);
+    }
+}
+
+&.rotatey {
+    &:hover{
+        transform: rotatey(2turn);
+    }
+}
+
+&.rotatez {
+    &:hover{
+        transform: rotatez(1turn);
+    }
+}
+
+&.skew {
+    &:hover{
+        transform: skew(10deg, 10deg);
+    }
+}
+
+&.skewx {
+    &:hover{
+        transform: skewx(30deg);
+    }
+}
+
+&.skewy {
+    &:hover{
+        transform: skewy(30deg);
+    }
+}
+}
+/* .titulo {
+    animation-timing-function: 2s;
+    animation-name: animationtitulo;
+}
+
+@keyframes animationtitulo {
+    from {
+        color: white;
+        background: darkcyan;
+    }
+    to {
+        color:blue;
+        background: gold;
+        font-size: 50px;
+    }
+} */

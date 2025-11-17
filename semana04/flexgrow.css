@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.box {
+    display: flex;
+    width: 500px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.box div {
+    width: 300px;
+    background-color: green;
+    font-size: 50px;
+}
+
+.box div:first-child {
+    background-color: yellow;
+    flex-grow: 2;
+}
+
+.box div:last-child {
+    background-color: yellow;
+    flex-grow: 2;
+}

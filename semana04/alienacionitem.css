@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* flex inicio */
+.flex-inicio {
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.flex-inicio div {
+    background: aquamarine;
+}
+
+.flex-inicio div:first-child {
+    background-color: yellow;
+}
+
+.flex-inicio div:last-child {
+    background-color: yellow;
+}
+
+/* flex final */
+.flex-final {
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.flex-final div {
+    background: aquamarine;
+}
+
+.flex-final div:first-child {
+    background-color: yellow;
+}
+
+.flex-final div:last-child {
+    background-color: yellow;
+}
+
+/* flex central */
+.flex-central {
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.flex-central div {
+    background: aquamarine;
+}
+
+.flex-central div:first-child {
+    background-color: yellow;
+}
+
+.flex-central div:last-child {
+    background-color: yellow;
+}
+
+/* flex between */
+.flex-between {
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.flex-between div {
+    background: aquamarine;
+}
+
+.flex-between div:first-child {
+    background-color: yellow;
+}
+
+.flex-between div:last-child {
+    background-color: yellow;
+}
+
+/* flex around */
+.flex-around {
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.flex-around div {
+    background: aquamarine;
+}
+
+.flex-around div:first-child {
+    background-color: yellow;
+}
+
+.flex-around div:last-child {
+    background-color: yellow;
+}
+
+/* flex evenly */
+.flex-evenly {
+    font-size: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.flex-evenly div {
+    background: aquamarine;
+}
+
+.flex-evenly div:first-child {
+    background-color: yellow;
+}
+
+.flex-evenly div:last-child {
+    background-color: yellow;
+}

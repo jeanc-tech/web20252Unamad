@@ -1,0 +1,12 @@
+*{
+    border: 1px solid blue;
+}
+
+.oscuro{
+    background-color: cornflowerblue;
+}
+
+.claro{
+    background-color: coral;
+}
+

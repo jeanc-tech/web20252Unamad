@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+.titulo {
+    color: white;
+    background: darkcyan;
+    transition-property: color;
+    transition-duration: 0.5s;
+    padding: 10px;
+    transition-timing-function: ease;
+    transition-delay: 1;
+}
+
+.titulo:hover {
+    color: gold;
+}
+
+div {
+    width: 100px;
+    height: 200px;
+    transition-duration: 0.5s;
+    background: darkcyan;
+}
+
+div:hover {
+    background: gold;
+}

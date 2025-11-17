@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* .contenedor{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+}
+
+.lista{
+    background: indigo;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+} */
+ 
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+}
+
+.lista{
+    background: indigo;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
