@@ -17,6 +17,19 @@
 
       }
   }
+  .navbar-menu {
+      display: flex;
+      gap: $spacing-large;
+      .navbar-item {
+          color: $light-color;
+          font-size: $font-size-base;
+          @include transition(color, 0.3s, ease);
+
+          &:hover {
+              color: $secondary-color;
+          }
+      }
+  }
   .navbar-menu{
     list-style: none;
     display: flex;

@@ -1,0 +1,481 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "CircularSp", "CircularSp-Arab", "CircularSp-Hebr", "CircularSp-Cyrl", "CircularSp-Grek", "CircularSp-Deva", "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 0.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 24px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  gap: 24px;
+  border-bottom: 1px solid rgba(40, 40, 40, 0.5);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.navbar .logo {
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar .logo img {
+  width: 80px;
+  height: auto;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+.navbar .logo img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.navbar .nav-links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 28px;
+  margin: 0;
+}
+.navbar .nav-links li a {
+  color: #a7a7a7;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+  padding: 4px 0;
+}
+.navbar .nav-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #1DB954;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+.navbar .nav-links li a:hover {
+  color: #ffffff;
+}
+.navbar .nav-links li a:hover::after {
+  width: 100%;
+}
+.navbar .nav-links li a:focus {
+  outline: 2px solid #1DB954;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+.navbar .auth-links {
+  margin-top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.navbar .auth-links .btn {
+  background-color: transparent;
+  border: none;
+  color: #a7a7a7;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-family: "CircularSp", "CircularSp-Arab", "CircularSp-Hebr", "CircularSp-Cyrl", "CircularSp-Grek", "CircularSp-Deva", "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic", sans-serif;
+}
+.navbar .auth-links .btn:hover {
+  color: #ffffff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.navbar .auth-links .btn:focus {
+  outline: 2px solid #1DB954;
+  outline-offset: 4px;
+  border-radius: 500px;
+}
+.navbar .auth-links .btn.login-btn {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 28px;
+  border-radius: 500px;
+  width: auto;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  -webkit-box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+          box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+.navbar .auth-links .btn.login-btn:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 0 6px 16px rgba(255, 255, 255, 0.15);
+          box-shadow: 0 6px 16px rgba(255, 255, 255, 0.15);
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1a1a1a), to(#121212));
+  background: linear-gradient(180deg, #1a1a1a 0%, #121212 100%);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 28px 32px;
+  position: relative;
+  scroll-behavior: smooth;
+}
+.content::-webkit-scrollbar {
+  width: 10px;
+}
+.content::-webkit-scrollbar-track {
+  background: transparent;
+}
+.content::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 100%, 0.2);
+  border-radius: 10px;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+.content::-webkit-scrollbar-thumb:hover {
+  background-color: hsla(0, 0%, 100%, 0.35);
+}
+
+section {
+  margin-bottom: 48px;
+  -webkit-animation: fadeIn 0.5s ease-in-out;
+          animation: fadeIn 0.5s ease-in-out;
+}
+section h2 {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 24px;
+  letter-spacing: -0.04em;
+  line-height: 1.3;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+.carousel-container {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+.carousel-nav svg {
+  width: 24px;
+  height: 24px;
+}
+.carousel-nav:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-transform: translateY(-50%) scale(1.1);
+          transform: translateY(-50%) scale(1.1);
+  -webkit-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
+}
+.carousel-nav:active {
+  -webkit-transform: translateY(-50%) scale(1.05);
+          transform: translateY(-50%) scale(1.05);
+}
+.carousel-nav.carousel-nav-left {
+  left: -24px;
+}
+.carousel-nav.carousel-nav-right {
+  right: -24px;
+}
+
+.carousel-container:hover .carousel-nav {
+  opacity: 1;
+}
+
+.carousel-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding: 8px 0 16px 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.carousel-content::-webkit-scrollbar {
+  display: none;
+}
+
+.song-card,
+.playlist-card,
+.artist-card {
+  background-color: #181818;
+  padding: 18px;
+  border-radius: 8px;
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 200px;
+}
+.song-card:hover,
+.playlist-card:hover,
+.artist-card:hover {
+  background-color: #282828;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+.song-card:hover .play-icon,
+.playlist-card:hover .play-icon,
+.artist-card:hover .play-icon {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.song-card:active,
+.playlist-card:active,
+.artist-card:active {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+.song-card img,
+.playlist-card img,
+.artist-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  -webkit-box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+.song-card:hover img,
+.playlist-card:hover img,
+.artist-card:hover img {
+  -webkit-box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7);
+}
+.song-card h3,
+.playlist-card h3,
+.artist-card h3 {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.4;
+}
+.song-card p,
+.playlist-card p,
+.artist-card p {
+  color: #a7a7a7;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.song-card .play-icon,
+.playlist-card .play-icon,
+.artist-card .play-icon {
+  position: absolute;
+  bottom: 110px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
+  -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-box-shadow: 0 8px 20px rgba(30, 215, 96, 0.4);
+          box-shadow: 0 8px 20px rgba(30, 215, 96, 0.4);
+  cursor: pointer;
+}
+.song-card .play-icon:hover,
+.playlist-card .play-icon:hover,
+.artist-card .play-icon:hover {
+  -webkit-transform: translateY(0) scale(1.08);
+          transform: translateY(0) scale(1.08);
+  background: linear-gradient(135deg, #1ed760 0%, #1fdf64 100%);
+  -webkit-box-shadow: 0 12px 28px rgba(30, 215, 96, 0.6);
+          box-shadow: 0 12px 28px rgba(30, 215, 96, 0.6);
+}
+.song-card .play-icon:active,
+.playlist-card .play-icon:active,
+.artist-card .play-icon:active {
+  -webkit-transform: translateY(0) scale(1.02);
+          transform: translateY(0) scale(1.02);
+}
+.song-card .play-icon img,
+.playlist-card .play-icon img,
+.artist-card .play-icon img {
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.artist-card img {
+  border-radius: 50%;
+}
+.artist-card .play-icon {
+  bottom: 115px;
+}

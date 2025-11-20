@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="src/main.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="src/assets/icons/Spotify_icon.svg.png" alt="Spotify Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Buscar</a></li>
+                <li><a href="#">Canciones</a></li>
+                <li><a href="#">Tu Biblioteca</a></li>
+            </ul>
+            <div class="auth-links">
+                <button class="btn">Registrarte</button>
+                <button class="btn login-btn">Iniciar sesión</button>
+            </div>
+        </nav>
+
+        <main class="content">
+            <section class="songs-section">
+                <h2>Canciones del Momento</h2>
+                <div class="carousel-container">
+                    <button class="carousel-nav carousel-nav-left" aria-label="Anterior">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                        </svg>
+                    </button>
+                    <div class="song-cards carousel-content">
+                        <div class="song-card" data-album-id="1">
+                            <img src="src/assets/albums/1.jpg" alt="Album 1">
+                            <h3>Ruby</h3>
+                            <p>Jennie</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="play-green">
+                            </div>
+                        </div>
+                        <div class="song-card" data-album-id="2">
+                            <img src="src/assets/albums/2.jpg" alt="Album 2">
+                            <h3>Amortage</h3>
+                            <p>Jisoo</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="song-card" data-album-id="3">
+                            <img src="src/assets/albums/3.jpg" alt="Album 3">
+                            <h3>Drip</h3>
+                            <p>Babymonster</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="song-card" data-album-id="4">
+                            <img src="src/assets/albums/4.jpg" alt="Album 4">
+                            <h3>Me</h3>
+                            <p>Jisoo</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="song-card" data-album-id="5">
+                            <img src="src/assets/albums/5.jpg" alt="Album 5">
+                            <h3>Square Up</h3>
+                            <p>BlackPink</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="song-card" data-album-id="6">
+                            <img src="src/assets/albums/6.jpg" alt="Album 6">
+                            <h3>The Album</h3>
+                            <p>BlackPink</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="song-card" data-album-id="7">
+                            <img src="src/assets/albums/7.jpg" alt="Album 7">
+                            <h3>Born Pink</h3>
+                            <p>BlackPink</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="song-card" data-album-id="8">
+                            <img src="src/assets/albums/8.jpg" alt="Album 8">
+                            <h3>AlterEgo</h3>
+                            <p>Lisa</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="song-card" data-album-id="9">
+                            <img src="src/assets/albums/9.jpg" alt="Album 9">
+                            <h3>Rosie</h3>
+                            <p>Rose</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="song-card" data-album-id="10">
+                            <img src="src/assets/albums/10.jpg" alt="Album 10">
+                            <h3>Fancy You</h3>
+                            <p>Twice</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="song-card" data-album-id="11">
+                            <img src="src/assets/albums/11.jpg" alt="Album 11">
+                            <h3>Air</h3>
+                            <p>Yeji</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="song-card" data-album-id="12">
+                            <img src="src/assets/albums/12.jpg" alt="Album 12">
+                            <h3>I Feel</h3>
+                            <p>Idle</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-nav carousel-nav-right" aria-label="Siguiente">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="playlists-section">
+                <h2>Playlists Populares</h2>
+                <div class="carousel-container">
+                    <button class="carousel-nav carousel-nav-left" aria-label="Anterior">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                        </svg>
+                    </button>
+                    <div class="playlist-cards carousel-content">
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 1.jpg" alt="Playlist 1">
+                            <h3>Éxitos del K-pop</h3>
+                            <p>Tu actualización diaria de las canciones más escuchadas.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 2.jpg" alt="Playlist 2">
+                            <h3>Top 50 de Jean</h3>
+                            <p>Tu actualización diaria de las canciones más escuchadas en el mundo.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 3.jpg" alt="Playlist 3">
+                            <h3>Música pop</h3>
+                            <p>Música que ya no suena ni en su casa.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 4.jpg" alt="Playlist 4">
+                            <h3>Éxitos del K-pop</h3>
+                            <p>El mejor K-pop en la zona.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 5.jpg" alt="Playlist 5">
+                            <h3>Éxitos de verano</h3>
+                            <p>Los éxitos más calientes de la música K-pop.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 6.jpg" alt="Playlist 6">
+                            <h3>Éxitos legendarios</h3>
+                            <p>Los mejores ritmos del mundo.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 7.jpg" alt="Playlist 7">
+                            <h3>Música para relajarse</h3>
+                            <p>Música oara disfrutar en casa.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 8.jpg" alt="Playlist 8">
+                            <h3>Best solo</h3>
+                            <p>Vive de nuevo con la energía musical.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 9.jpg" alt="Playlist 9">
+                            <h3>Best dancer</h3>
+                            <p>Energía para tu entrenamiento y rutina diaria</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 10.jpg" alt="Playlist 10">
+                            <h3>Éxitos de oro</h3>
+                            <p>Los mejores temas para la fiesta.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 11.jpg" alt="Playlist 11">
+                            <h3>Best ritmo</h3>
+                            <p>Albúm que contiene de todo un poco.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 12.jpg" alt="Playlist 12">
+                            <h3>Éxitos en China</h3>
+                            <p>El soundtrack perfecto del verano.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 13.jpg" alt="Playlist 13">
+                            <h3>Best SoundTrack</h3>
+                            <p>Descubre lo mejor de Nayeon.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 14.jpg" alt="Playlist 14">
+                            <h3>Clásicos del K-pop</h3>
+                            <p>Los himnos del rock clásico.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 15.jpg" alt="Playlist 15">
+                            <h3>Electronic Dance K-pop</h3>
+                            <p>Beats electrónicos para bailar.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 16.jpg" alt="Playlist 16">
+                            <h3>Best coreografia</h3>
+                            <p>Sofisticación y coreografia brutal.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 17.jpg" alt="Playlist 17">
+                            <h3>k-pop para disfrutar</h3>
+                            <p>Lo esencial K-pop.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 18.jpg" alt="Playlist 18">
+                            <h3>Best Albúm</h3>
+                            <p>El mejor albúm masculino del K-pop</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 19.jpg" alt="Playlist 19">
+                            <h3>Best solo</h3>
+                            <p>El mejor albúm masculino del K-pop.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="playlist-card">
+                            <img src="src/assets/playlists/Art 20.jpg" alt="Playlist 20">
+                            <h3>Playlist Twice</h3>
+                            <p>Nuevo albúm de Twice.</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-nav carousel-nav-right" aria-label="Siguiente">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="artists-section">
+                <h2>Artistas Populares</h2>
+                <div class="carousel-container">
+                    <button class="carousel-nav carousel-nav-left" aria-label="Anterior">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                        </svg>
+                    </button>
+                    <div class="artist-cards carousel-content">
+                        <div class="artist-card">
+                            <img src="src/assets/main/Ellipse 1.jpg" alt="Artista 1">
+                            <h3>Jisoo</h3>
+                            <p>Artista, Cantante, Modelo y Actriz</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="src/assets/main/Ellipse 2.jpg" alt="Artista 2">
+                            <h3>Lisa</h3>
+                            <p>Artista</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="src/assets/main/Ellipse 3.jpg" alt="Artista 3">
+                            <h3>Nayeon</h3>
+                            <p>Artista</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="src/assets/main/Ellipse 4.jpg" alt="Artista 4">
+                            <h3>Rose</h3>
+                            <p>Artista</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="src/assets/main/Ellipse 5.jpg" alt="Artista 5">
+                            <h3>Jennie</h3>
+                            <p>Artista</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="src/assets/main/Ellipse 6.jpg" alt="Artista 6">
+                            <h3>Itzy</h3>
+                            <p>Artista</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="src/assets/main/Ellipse 7.jpg" alt="Artista 7">
+                            <h3>Twice</h3>
+                            <p>Artista</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="src/assets/main/Ellipse 8.jpg" alt="Artista 8">
+                            <h3>Twice</h3>
+                            <p>Artista</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="src/assets/main/Ellipse 9.jpg" alt="Artista 9">
+                            <h3>Twice</h3>
+                            <p>Artista</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                        <div class="artist-card">
+                            <img src="src/assets/main/Ellipse 10.jpg" alt="Artista 10">
+                            <h3>Billie Eillish</h3>
+                            <p>Artista</p>
+                            <div class="play-icon">
+                                <img src="src/assets/icons/play-green.png" alt="Play">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-nav carousel-nav-right" aria-label="Siguiente">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                        </svg>
+                    </button>
+                    <img src="src/assets/icons/play-green.png" alt="Play">
+                </div>
+    </div>
+    <div class="playlist-card">
+        <img src="src/assets/playlists/Art 10.jpg" alt="Playlist 10">
+        <h3>Éxitos de oro</h3>
+        <p>Los mejores temas para la fiesta.</p>
+        <div class="play-icon">
+            <img src="src/assets/icons/play-green.png" alt="Play">
+        </div>
+    </div>
+    <div class="playlist-card">
+        <img src="src/assets/playlists/Art 11.jpg" alt="Playlist 11">
+        <h3>Best ritmo</h3>
+        <p>Albúm que contiene de todo un poco.</p>
+        <div class="play-icon">
+            <img src="src/assets/icons/play-green.png" alt="Play">
+        </div>
+    </div>
+    <div class="playlist-card">
+        <img src="src/assets/playlists/Art 12.jpg" alt="Playlist 12">
+        <h3>Éxitos en China</h3>
+        <p>El soundtrack perfecto del verano.</p>
+        <div class="play-icon">
+            <img src="src/assets/icons/play-green.png" alt="Play">
+        </div>
+    </div>
+    <div class="playlist-card">
+        <img src="src/assets/playlists/Art 13.jpg" alt="Playlist 13">
+        <h3>Best SoundTrack</h3>
+        <p>Descubre lo mejor de Nayeon.</p>
+        <div class="play-icon">
+            <img src="src/assets/icons/play-green.png" alt="Play">
+        </div>
+    </div>
+    <div class="playlist-card">
+        <img src="src/assets/playlists/Art 14.jpg" alt="Playlist 14">
+        <h3>Clásicos del K-pop</h3>
+        <p>Los himnos del rock clásico.</p>
+        <div class="play-icon">
+            <img src="src/assets/icons/play-green.png" alt="Play">
+        </div>
+    </div>
+    <div class="playlist-card">
+        <img src="src/assets/playlists/Art 15.jpg" alt="Playlist 15">
+        <h3>Electronic Dance K-pop</h3>
+        <p>Beats electrónicos para bailar.</p>
+        <div class="play-icon">
+            <img src="src/assets/icons/play-green.png" alt="Play">
+        </div>
+    </div>
+    <div class="playlist-card">
+        <img src="src/assets/playlists/Art 16.jpg" alt="Playlist 16">
+        <h3>Best coreografia</h3>
+        <p>Sofisticación y coreografia brutal.</p>
+        <div class="play-icon">
+            <img src="src/assets/icons/play-green.png" alt="Play">
+        </div>
+    </div>
+    <div class="playlist-card">
+        <img src="src/assets/playlists/Art 17.jpg" alt="Playlist 17">
+        <h3>k-pop para disfrutar</h3>
+        <p>Lo esencial K-pop.</p>
+        <div class="play-icon">
+            <img src="src/assets/icons/play-green.png" alt="Play">
+        </div>
+    </div>
+    <div class="playlist-card">
+        <img src="src/assets/playlists/Art 18.jpg" alt="Playlist 18">
+        <h3>Best Albúm</h3>
+        <p>El mejor albúm masculino del K-pop</p>
+        <div class="play-icon">
+            <img src="src/assets/icons/play-green.png" alt="Play">
+        </div>
+    </div>
+    <div class="playlist-card">
+        <img src="src/assets/playlists/Art 19.jpg" alt="Playlist 19">
+        <h3>Best solo</h3>
+        <p>El mejor albúm masculino del K-pop.</p>
+        <div class="play-icon">
+            <img src="src/assets/icons/play-green.png" alt="Play">
+        </div>
+    </div>
+    <div class="playlist-card">
+        <img src="src/assets/playlists/Art 20.jpg" alt="Playlist 20">
+        <h3>Playlist Twice</h3>
+        <p>Nuevo albúm de Twice.</p>
+        <div class="play-icon">
+            <img src="src/assets/icons/play-green.png" alt="Play">
+        </div>
+    </div>
+    </div>
+    <button class="carousel-nav carousel-nav-right" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+        </svg>
+    </button>
+    </div>
+    </section>
+
+    <section class="artists-section">
+        <h2>Artistas Populares</h2>
+        <div class="carousel-container">
+            <button class="carousel-nav carousel-nav-left" aria-label="Anterior">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                </svg>
+            </button>
+            <div class="artist-cards carousel-content">
+                <div class="artist-card">
+                    <img src="src/assets/main/Ellipse 1.jpg" alt="Artista 1">
+                    <h3>Jisoo</h3>
+                    <p>Artista, Cantante, Modelo y Actriz</p>
+                    <div class="play-icon">
+                        <img src="src/assets/icons/play-green.png" alt="Play">
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="src/assets/main/Ellipse 2.jpg" alt="Artista 2">
+                    <h3>Lisa</h3>
+                    <p>Artista</p>
+                    <div class="play-icon">
+                        <img src="src/assets/icons/play-green.png" alt="Play">
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="src/assets/main/Ellipse 3.jpg" alt="Artista 3">
+                    <h3>Nayeon</h3>
+                    <p>Artista</p>
+                    <div class="play-icon">
+                        <img src="src/assets/icons/play-green.png" alt="Play">
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="src/assets/main/Ellipse 4.jpg" alt="Artista 4">
+                    <h3>Rose</h3>
+                    <p>Artista</p>
+                    <div class="play-icon">
+                        <img src="src/assets/icons/play-green.png" alt="Play">
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="src/assets/main/Ellipse 5.jpg" alt="Artista 5">
+                    <h3>Jennie</h3>
+                    <p>Artista</p>
+                    <div class="play-icon">
+                        <img src="src/assets/icons/play-green.png" alt="Play">
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="src/assets/main/Ellipse 6.jpg" alt="Artista 6">
+                    <h3>Itzy</h3>
+                    <p>Artista</p>
+                    <div class="play-icon">
+                        <img src="src/assets/icons/play-green.png" alt="Play">
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="src/assets/main/Ellipse 7.jpg" alt="Artista 7">
+                    <h3>Twice</h3>
+                    <p>Artista</p>
+                    <div class="play-icon">
+                        <img src="src/assets/icons/play-green.png" alt="Play">
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="src/assets/main/Ellipse 8.jpg" alt="Artista 8">
+                    <h3>Twice</h3>
+                    <p>Artista</p>
+                    <div class="play-icon">
+                        <img src="src/assets/icons/play-green.png" alt="Play">
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="src/assets/main/Ellipse 9.jpg" alt="Artista 9">
+                    <h3>Twice</h3>
+                    <p>Artista</p>
+                    <div class="play-icon">
+                        <img src="src/assets/icons/play-green.png" alt="Play">
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="src/assets/main/Ellipse 10.jpg" alt="Artista 10">
+                    <h3>Billie Eillish</h3>
+                    <p>Artista</p>
+                    <div class="play-icon">
+                        <img src="src/assets/icons/play-green.png" alt="Play">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-nav carousel-nav-right" aria-label="Siguiente">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+                </svg>
+            </button>
+        </div>
+    </section>
+    </main>
+    </div>
+
+    <script src="src/carousel.js"></script>
+</body>
+
+</html>
