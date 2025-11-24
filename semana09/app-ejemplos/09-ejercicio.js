@@ -1,3 +1,51 @@
+function ejercicio1() {
+    let nombre = prompt("Ingresa tu nombre: ");
+    console.log(nombre);
+    let apellido = prompt("Ingresa tu apellido: ");
+    console.log(apellido);
+    let edad = prompt("Ingresa tu edad: ");
+    console.log(edad);
+
+    console.log("Buen día,", nombre, apellido, "tengo", edad, "años");
+    alert(`Buen día: ${nombre} ${apellido}, tienes ${edad} años`);
+}
+
+
+function ejercicio2() {
+    let numero = parseFloat(document.getElementById('numero').value);
+
+    if (isNaN(numero)) {
+        alert("Por favor ingresa un número válido.");
+        return;
+    }
+
+    if (numero > 0) {
+        console.log("El número es positivo");
+        alert(`El número ${numero} es POSITIVO`);
+    } else if (numero < 0) {
+        console.log("El número es negativo");
+        alert(`El número ${numero} es NEGATIVO`);
+    } else if (numero === 0) {
+        console.log("El número es cero");
+        alert(`El número es CERO`);
+    }
+}
+
+
+function ejercicio3() {
+    let monto = parseFloat(document.getElementById('monto').value);
+
+    if (isNaN(monto)) {
+        alert("Por favor ingresa un monto válido.");
+        return;
+    }
+
+    let igv = monto * 0.18;
+    let montoFinal = monto + igv;
+    alert(`El monto a pagar es de: S/.${montoFinal.toFixed(2)}`);
+}
+
+
 function calcularMonto() {
     let montoTotal = parseFloat(document.getElementById('montoTotal').value);
     if (isNaN(montoTotal)) {

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo JS</title>
-    <style> 
+    <title>Los 6 ejercicios que nos dio el dia viernes</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f9;
@@ -13,62 +14,129 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            padding: 20px;
         }
 
         .container {
             background-color: #fff;
-            padding: 30px;
+            padding: 40px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             text-align: center;
-            width: 300px;
+            width: 100%;
+            max-width: 500px;
         }
 
         h1 {
             color: #4CAF50;
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 28px;
+            margin-bottom: 30px;
         }
 
-        input, button {
+        .ejercicio-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .ejercicio-section h2 {
+            color: #333;
+            font-size: 18px;
+            margin: 0 0 8px 0;
+        }
+
+        .ejercicio-section p {
+            color: #666;
+            font-size: 14px;
+            margin: 0 0 15px 0;
+        }
+
+        .ejercicio-section input {
             width: 100%;
             padding: 10px;
-            margin: 10px 0;
+            margin: 8px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
             box-sizing: border-box;
+            font-size: 14px;
         }
 
-        button {
+        .ejercicio-section button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
             background-color: #4CAF50;
             color: white;
             font-size: 16px;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
-        button:hover {
+        .ejercicio-section button:hover {
             background-color: #45a049;
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
-        <h1>Ejemplo JS Interactivo</h1>
-        <input type="number" id="montoTotal" placeholder="Monto total a pagar">
-        <button onclick="calcularMonto()">Calcular monto por amigo</button>
+        <h1>Ejercicios a presentar</h1>
 
-        <input type="text" id="cadena1" placeholder="Introduce la primera cadena">
-        <input type="text" id="cadena2" placeholder="Introduce la segunda cadena">
-        <button onclick="combinacionCadenas()">Combinar cadenas</button>
+        <div class="ejercicio-section">
+            <h2>Ejercicio 1</h2>
+            <p>Solicitar nombre, apellido y edad</p>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+            <input type="text" id="apellido" placeholder="Ingresa tu apellido">
+            <input type="number" id="edad" placeholder="Ingresa tu edad">
+            <button onclick="ejercicio1()">Ejecutar Ejercicio 1</button>
+        </div>
 
-        <input type="number" id="base1" placeholder="Base del primer triángulo">
-        <input type="number" id="altura1" placeholder="Altura del primer triángulo">
-        <input type="number" id="base2" placeholder="Base del segundo triángulo">
-        <input type="number" id="altura2" placeholder="Altura del segundo triángulo">
-        <button onclick="calcularAreas()">Comparar áreas</button>
+        <div class="ejercicio-section">
+            <h2>Ejercicio 2</h2>
+            <p>Determinar si un número es positivo, negativo o cero</p>
+            <input type="number" id="numero" placeholder="Ingresa un número">
+            <button onclick="ejercicio2()">Ejecutar Ejercicio 2</button>
+        </div>
+
+        <div class="ejercicio-section">
+            <h2>Ejercicio 3</h2>
+            <p>Calcular monto con IGV (18%)</p>
+            <input type="number" id="monto" placeholder="Ingresa un monto para pagar">
+            <button onclick="ejercicio3()">Ejecutar Ejercicio 3</button>
+        </div>
+
+        <div class="ejercicio-section">
+            <h2>Ejercicio 4</h2>
+            <p>Calcular monto por amigo</p>
+            <input type="number" id="montoTotal" placeholder="Monto total a pagar">
+            <button onclick="calcularMonto()">Ejecutar Ejercicio 4</button>
+        </div>
+
+        <div class="ejercicio-section">
+            <h2>Ejercicio 5</h2>
+            <p>Combinar cadenas de texto</p>
+            <input type="text" id="cadena1" placeholder="Introduce la primera cadena">
+            <input type="text" id="cadena2" placeholder="Introduce la segunda cadena">
+            <button onclick="combinacionCadenas()">Ejecutar Ejercicio 5</button>
+        </div>
+
+        <div class="ejercicio-section">
+            <h2>Ejercicio 6</h2>
+            <p>Comparar áreas de triángulos</p>
+            <input type="number" id="base1" placeholder="Base del primer triángulo">
+            <input type="number" id="altura1" placeholder="Altura del primer triángulo">
+            <input type="number" id="base2" placeholder="Base del segundo triángulo">
+            <input type="number" id="altura2" placeholder="Altura del segundo triángulo">
+            <button onclick="calcularAreas()">Ejecutar Ejercicio 6</button>
+        </div>
     </div>
 
-    <script src="./09-ejercicio.js"></script> 
+    <script src="./09-ejercicio.js"></script>
 </body>
+
 </html>
