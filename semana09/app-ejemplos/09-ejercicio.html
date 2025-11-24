@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        h1 {
+            color: #4CAF50;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Ejemplo JS Interactivo</h1>
+        <input type="number" id="montoTotal" placeholder="Monto total a pagar">
+        <button onclick="calcularMonto()">Calcular monto por amigo</button>
+
+        <input type="text" id="cadena1" placeholder="Introduce la primera cadena">
+        <input type="text" id="cadena2" placeholder="Introduce la segunda cadena">
+        <button onclick="combinacionCadenas()">Combinar cadenas</button>
+
+        <input type="number" id="base1" placeholder="Base del primer triángulo">
+        <input type="number" id="altura1" placeholder="Altura del primer triángulo">
+        <input type="number" id="base2" placeholder="Base del segundo triángulo">
+        <input type="number" id="altura2" placeholder="Altura del segundo triángulo">
+        <button onclick="calcularAreas()">Comparar áreas</button>
+    </div>
+
+    <script src="./09-ejercicio.js"></script> 
+</body>
+</html>

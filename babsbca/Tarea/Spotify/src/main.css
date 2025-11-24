@@ -426,8 +426,6 @@ section h2 {
   right: 20px;
   width: 50px;
   height: 50px;
-  background: linear-gradient(135deg, #1DB954 0%, #1ed760 100%);
-  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,8 +440,6 @@ section h2 {
           transform: translateY(12px);
   -webkit-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-box-shadow: 0 8px 20px rgba(30, 215, 96, 0.4);
-          box-shadow: 0 8px 20px rgba(30, 215, 96, 0.4);
   cursor: pointer;
 }
 .song-card .play-icon:hover,
@@ -451,9 +447,6 @@ section h2 {
 .artist-card .play-icon:hover {
   -webkit-transform: translateY(0) scale(1.08);
           transform: translateY(0) scale(1.08);
-  background: linear-gradient(135deg, #1ed760 0%, #1fdf64 100%);
-  -webkit-box-shadow: 0 12px 28px rgba(30, 215, 96, 0.6);
-          box-shadow: 0 12px 28px rgba(30, 215, 96, 0.6);
 }
 .song-card .play-icon:active,
 .playlist-card .play-icon:active,
@@ -464,13 +457,13 @@ section h2 {
 .song-card .play-icon img,
 .playlist-card .play-icon img,
 .artist-card .play-icon img {
-  width: 26px;
-  height: 26px;
+  width: 50px;
+  height: 50px;
   margin: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
+  -webkit-filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
 }
 
 .artist-card img {

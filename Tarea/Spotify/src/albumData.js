@@ -1,4 +1,3 @@
-// Album data with songs
 const albumsData = {
     1: {
         id: 1,

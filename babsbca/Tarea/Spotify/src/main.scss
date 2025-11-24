@@ -351,21 +351,19 @@ section {
         right: 20px;
         width: 50px;
         height: 50px;
-        background: linear-gradient(135deg, $spotify-green 0%, #1ed760 100%);
-        border-radius: 50%;
+
         display: flex;
         align-items: center;
         justify-content: center;
         opacity: 0;
         transform: translateY(12px);
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        box-shadow: 0 8px 20px rgba(30, 215, 96, 0.4);
+
         cursor: pointer;
 
         &:hover {
             transform: translateY(0) scale(1.08);
-            background: linear-gradient(135deg, #1ed760 0%, #1fdf64 100%);
-            box-shadow: 0 12px 28px rgba(30, 215, 96, 0.6);
+
         }
 
         &:active {
@@ -373,11 +371,11 @@ section {
         }
 
         img {
-            width: 26px;
-            height: 26px;
+            width: 50px;
+            height: 50px;
             margin: 0;
             box-shadow: none;
-            filter: brightness(0) invert(1);
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
         }
     }
 }
