@@ -350,7 +350,7 @@ section h2 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  width: 200px;
+  width: 500px;
 }
 .song-card:hover,
 .playlist-card:hover,
