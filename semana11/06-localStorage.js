@@ -12,7 +12,7 @@ function agregarTarea(tarea) {
 
 function mostrarTareas() {
     const tareas = JSON.parse(localStorage.getItem("tareas")) | [];
-    console,log("Lista de Tareas:");
+    console.log("Lista de Tareas:");
     tareas.forEach((tarea, index) => {
         console.log(`${index + 1}. ${tareas}`);
     });
